@@ -23,7 +23,7 @@ class Node{
         }
 };
 
-Node* Arr2dll(vector <int> &v){
+Node* arrayToDoublyLinkedList(vector <int> &v){
     if(v.size()<1)
         return NULL;
     Node *Head = new Node(v[0]);
@@ -68,9 +68,6 @@ Node* deleteTail(Node* Head){
     return Head;
 }
 
-Node* deleteByPosition(int k){
-    if()
-}
 
 void print(Node* Head){
     Node *temp = Head;
@@ -83,7 +80,7 @@ void print(Node* Head){
 int main()
 {
     vector <int> v={1,2};
-    Node* Head=Arr2dll(v);
+    Node* Head=arrayToDoublyLinkedList(v);
     print(Head);
     Head=deleteHead(Head);
     print(Head);
